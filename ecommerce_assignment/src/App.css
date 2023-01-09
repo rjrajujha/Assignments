@@ -1,0 +1,42 @@
+body {
+  background-color: gray;
+}
+.page-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title {
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 2px auto auto 5px;
+}
+.content-container{
+    text-align: right;
+    color: white;
+    margin: auto 80px auto auto;
+}
+
+.search-form > input {
+    width: 280px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin: 5px 5px auto auto;
+}
+
+.favText {
+    font-size: x-large;
+    color: white;
+}
+
+.favList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.favList > img{
+  width: 15%;
+  margin: 5px 2px 2px 2px;
+}
