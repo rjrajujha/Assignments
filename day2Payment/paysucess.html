@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Sucessful</title>
+</head>
+
+<body>
+    <p>Your Payment was Sucessful</p>
+    <p> You will be redirected to invoive in <span id="time">5</span> sec </p>
+    <script>
+        if (localStorage.getItem("usdStorage") === "undefined") {
+            alert("Make your Payment First")
+            window.location = ("./");
+        }
+        let sec = document.getElementById('time')
+        setInterval(() => {
+            if (parseInt(sec.innerText) > 0) {
+                sec.innerText = parseInt(sec.innerText) - 1;
+            }
+            else {
+                window.location = ('./invoice.html');
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

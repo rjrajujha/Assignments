@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+
+<body>
+    <div id="invoice-page">
+        <div id="invoice">
+            <p>Your Payment was Sucessful</p>
+            <p>Pro Membership <span id="usd">0</span></p>
+            <p>Plateform fee $10</p>
+            <p>Total Amount <span id="total-amount">10</span></p>
+        </div>
+    </div>
+    <script>
+        let usdValue = document.getElementById('usd')
+        if (localStorage.getItem("usdStorage") !== "undefined") {
+            usdValue.innerText = localStorage.getItem("usdStorage");
+            document.getElementById('total-amount').innerText = parseInt(localStorage.getItem("usdStorage")) + 10;
+            localStorage.setItem("usdStorage", undefined);
+        }
+        else {
+            alert("Make your Payment First")
+            window.location = ("./");
+        }
+    </script>
+</body>
+
+</html>

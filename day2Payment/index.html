@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="payment">
+    <p style="font-size: xx-large">Payment</p>
+    <p>Complete your pro membership</p>
+    <div class="amount">
+      <div class="total-amount">
+        <span style="font-weight: bold; font-size: large">$</span>
+        <span id="usd" style="font-size: large">0</span>
+        <span style="font-weight: bolder; color: gray">USD</span>
+      </div>
+      <div class="hr-line"></div>
+      <div class="options"></div>
+      <div class="options">
+        <input type="checkbox" name="opt-m" value="msg" id="msg" /> Messaging
+        <input type="checkbox" name="opt-a" value="ana" id="ana" /> Analytics
+        <input type="checkbox" name="opt-s" value="sup" id="sup" /> Support
+        <input type="checkbox" name="opt-d" value="dis" id="dis" /> Discount
+      </div>
+      <span>Know more</span>
+    </div>
+    <p style="padding: 0 15px; font-weight: bold">Pay with card</p>
+    <div class="card-no">
+      <input id="card-no-input" placeholder="8880 09" minlength="19" maxlength="19" />
+    </div>
+    <br />
+    <div class="card-details">
+      <input id="mm-yy" maxlength="5" placeholder="mm/yy" required />
+      <input class="cvv" id="cvv" type="number" placeholder="CVV" maxlength="4" required />
+    </div>
+    <div class="pay">
+      <button onclick="makePayment()">Make Payment</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

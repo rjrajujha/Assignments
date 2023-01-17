@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you sure</title>
+</head>
+
+<body>
+
+    <h1>Remove</h1>
+    <p>Some text</p>
+
+    <button onclick="invoice()">Conform</button>
+    <button onclick="homepage()">Take me back</button>
+
+    <script>
+        if (localStorage.getItem("usdStorage") === "undefined") {
+            alert("Make your Payment First")
+            window.location = ("./");
+        }
+
+        function invoice() {
+            window.location = ("./paysucess.html");
+        }
+        function homepage() {
+            window.location = ("./");
+        }
+    </script>
+</body>
+
+</html>
