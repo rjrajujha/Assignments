@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Current Assignment</title>
+</head>
+
+<body>
+    <p> You will be redirected to Current Assignment in <span id="time">5</span> sec </p>
+
+    <script>
+        let sec = document.getElementById('time');
+        setInterval(() => {
+            if (parseInt(sec.innerText) > 0) {
+                sec.innerText = parseInt(sec.innerText) - 1;
+            }
+            else {
+                window.location = ('./day2Payment/');
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
