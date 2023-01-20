@@ -1,0 +1,69 @@
+* {
+    background-color: rgb(50, 50, 50);
+}
+
+#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+    width: 300px;
+    height: fit-content;
+}
+
+#wc-text {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#pounds {
+    height: 30px;
+    background-color: white;
+    width: 246px;
+    margin-left: 25px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+#grams {
+    margin-top: 8px;
+    background-color: rgb(150, 150, 255);
+    width: 250px;
+    margin-left: 25px;
+    height: 75px;
+    border-radius: 6px;
+}
+
+#kg {
+    margin-top: 8px;
+    background-color: rgb(150, 255, 150);
+    width: 250px;
+    margin-left: 25px;
+    height: 75px;
+    border-radius: 6px;
+}
+
+#ounces {
+    margin-top: 8px;
+    background-color: rgb(255, 150, 150);
+    width: 250px;
+    margin-left: 25px;
+    height: 75px;
+    border-radius: 6px;
+}
+
+.unit-text {
+    background-color: transparent;
+    color: white;
+    font-size: larger;
+    padding: 5px 10px;
+}
+
+.unit {
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    margin: -20px 0px auto 10px;
+}
