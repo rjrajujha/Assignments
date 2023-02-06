@@ -1,0 +1,33 @@
+#nav {
+    background-color: lightgray;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+#logo>p {
+    font-size: larger;
+    font-weight: bolder;
+    border: 4px solid black;
+    letter-spacing: 2px;
+    padding: 0px 6px;
+}
+
+#h-text {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#search > input {
+    margin: 15px 0px;
+    height: 30px;
+    width: 200px;
+    border: 2px solid blue;
+}
