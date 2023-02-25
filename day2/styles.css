@@ -1,0 +1,151 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.larger {
+    padding: 5px;
+    color: red;
+    font-size: 45px;
+}
+
+header {
+    height: 50px;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    display: flex;
+}
+
+.searchbox {
+    border: 2px solid transparent;
+    background-color: aliceblue;
+    height: 30px;
+    margin: 5px;
+    width: 180px;
+}
+
+.navbar {
+    margin: 5px 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logo-txt {
+    font-size: 12px;
+    opacity: .8;
+    margin: 0 -2px;
+}
+
+.nav-ico {
+    font-size: x-large;
+    color: gray;
+}
+
+.forms {
+    display: flex;
+    height: 225px;
+}
+
+.f-left {
+    width: 50%;
+    display: flex;
+}
+
+.fl-cal {
+    width: 50%;
+    background-color: blue;
+}
+
+.fl-pt {
+    width: 50%;
+    background-color: steelblue;
+}
+
+
+.f-right {
+    width: 50%;
+    background-color: yellow;
+}
+
+.actions {
+    height: 20%;
+    background-color: blue;
+}
+
+.health {
+    height: 80%;
+    background-color: red;
+    display: flex;
+}
+
+.hel-opt {
+    width: 50%;
+    background-color: yellow;
+}
+
+.hel-check {
+    width: 50%;
+    background-color: wheat;
+}
+
+.tasks {
+    height: 275px;
+    background-color: springgreen;
+}
+
+footer {
+    height: 150px;
+    background-color: brown;
+}
+
+
+/* Cal-Stylesheet */
+.month {
+    height: 55px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.weekdays {
+    margin: -16px 0;
+    padding: 2px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12.7%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12.7%;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
